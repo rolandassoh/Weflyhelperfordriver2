@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardPreventCornerOverlap="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/list_item_expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/calendar_item_height" >
+
+            <ImageView
+                android:id="@+id/list_item_expandable_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/cd_main_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_parcel" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4c424242" />
+
+            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                android:id="@+id/list_item_expandable_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:maxWidth="180dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:text="@string/parcelle_num"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                app:typeface="robotoLight" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="#b237474f"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@color/material_grey_300"
+                android:contentDescription="@string/cd_main_image"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="12dp" >
+
+            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                android:id="@+id/nameTView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/name"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:typeface="robotoLight" />
+
+            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                android:id="@+id/addressTView"
+                android:maxLines="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:typeface="robotoMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                android:id="@+id/parcelCountTView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="1"
+                android:gravity="center"
+                android:text="@string/parcel_count"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:typeface="robotoLight" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0"
+        android:background="@android:color/transparent" />
+
+</LinearLayout>

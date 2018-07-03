@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="230dp">
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_default_parcel"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:id="@+id/image_view_notif_item" />
+
+        <TextView
+            android:textSize="13dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="@string/region"
+            android:textColor="@android:color/white"
+            android:background="@drawable/raduis_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/regionTView" />
+        <TextView
+
+            android:textSize="10dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="@string/culture_title"
+            android:textColor="@android:color/white"
+            android:background="@drawable/raduis_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/entrepriseTView" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

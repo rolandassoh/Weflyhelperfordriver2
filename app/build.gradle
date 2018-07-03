@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion project.compileSdkVersion
+    defaultConfig {
+        applicationId "com.wedevgroup.weflyhelperfordriver"
+        minSdkVersion project.minSdkVersion
+        targetSdkVersion project.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion project.buildToolsVersion
+
+    dexOptions {
+        maxProcessCount 8
+        javaMaxHeapSize "4g"
+        preDexLibraries true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    def androidSupportVersion = project.androidSupportVersion
+    def gmsVersion = project.gmsVersion
+    implementation("com.google.android.gms:play-services-maps:${gmsVersion}") {
+        force = true
+    }
+    implementation("com.android.support:design:${androidSupportVersion}") {
+        force = true
+    }
+    implementation("com.android.support:gridlayout-v7:${androidSupportVersion}") {
+        force = true
+    }
+    implementation("com.android.support:appcompat-v7:${androidSupportVersion}") {
+        force = true
+    }
+    implementation("com.android.support:support-v4:${androidSupportVersion}") {
+        force = true
+    }
+    implementation("com.android.support:recyclerview-v7:${androidSupportVersion}") {
+        force = true
+    }
+    implementation("com.android.support:cardview-v7:${androidSupportVersion}") {
+        force = true
+    }
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+
+    // Map
+    implementation 'com.google.maps.android:android-maps-utils:0.5+'
+    //Splash Animation
+    implementation project(':kenBurnsView')
+    // Drag selection Recycler View
+    implementation project(':dragSelectionView')
+    // Token
+    implementation 'com.auth0.android:jwtdecode:1.1.1'
+    //    REST API REQUEST
+    implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    // CALENDAR
+    implementation project(':calendarview')
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    //Dialog Box
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    //Icons
+    implementation 'com.mikepenz:iconics-core:3.0.3@aar'
+    implementation 'com.mikepenz:iconics-views:3.0.3@aar'
+    implementation 'com.mikepenz:fontawesome-typeface:5.0.6.0@aar'
+
+    // Language Selection
+    implementation 'com.github.GwonHyeok:StickySwitch:0.0.15'
+    // Circle Image View
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //Menu Top to Left
+    implementation 'com.github.Yalantis:GuillotineMenu-Android:1.2'
+    //Loading UI
+    implementation 'com.victor:lib:1.0.4'
+    implementation 'com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6'
+    //NavigationTab
+    implementation 'devlight.io:navigationtabbar:1.2.5'
+    // Letter
+    implementation 'com.github.pavlospt:roundedletterview:1.2'
+    // Adapter Image
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //Dialog Box
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    //Language
+    implementation 'com.akexorcist:localizationactivity:1.2.2'
+
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

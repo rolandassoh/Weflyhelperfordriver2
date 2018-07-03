@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wedevgroup.weflyhelperfordriver">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Do not kill my service on Screen Off -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Check if app is running -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".utils.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_updated"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_updated"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key" />
+
+        <activity
+            android:name=".activity.SplashScreensActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginForm">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ParcelleDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeWithoutActionBar" />
+
+        <service
+            android:name=".service.LocationProviderService"
+            android:enabled="true"
+            android:launchMode="singleTask" />
+        <service
+            android:name=".service.CalendarNotificationService"
+            android:enabled="true"
+            android:launchMode="singleTask" />
+
+        <service
+            android:name=".receiver.startMyCalendarJobService"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name=".receiver.startMyCalendarReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginForm" />
+        <activity
+            android:name=".activity.AllParcelsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginForm" />
+
+        <!-- Drag selection -->
+
+
+        <!-- Calendar Module -->
+        <activity
+            android:name="com.haibin.calendarviewproject.colorful.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeWithoutActionBar" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginForm" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeWithoutActionBar" />
+        <activity
+            android:name=".activity.CompanyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeWithoutActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,4 @@
+include ':app'
+include ':kenBurnsView'
+include ':dragSelectionView'
+include ':calendarview'

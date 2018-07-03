@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--rounded background-->
+    <dimen name="activity_vertical_margin_top_cus">90dp</dimen>
+    <dimen name="activity_vertical_margin_top_cus_frag">58dp</dimen>
+    <dimen name="activity_vertical_margin_custom">30dp</dimen>
+
+    <!--Adapter-->
+    <dimen name="parcel_row_height">200dp</dimen>
+
+    <!--Calendar item-->
+    <dimen name="calendar_item_height">160dp</dimen>
+
+
+    <dimen name="parcel_details_text_size">15sp</dimen>
+
+</resources>

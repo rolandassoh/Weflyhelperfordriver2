@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/layoutBackgroundLight">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parcel"
+                        android:textSize="@dimen/detail_text_header_size"
+                        app:typeface="robotoThin"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/area"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="@dimen/item_text_size"
+                                app:typeface="robotoRegular"/>
+
+                            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                                android:id="@+id/surfaceTView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/empty_string_val"
+                                android:textSize="@dimen/item_text_size"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true"
+                                app:typeface="robotoRegular"/>
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="3dp" >
+
+                            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/perimeter"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="@dimen/item_text_size"
+                                app:typeface="robotoRegular"/>
+
+                            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                                android:id="@+id/perimeterTView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/empty_string_val"
+                                android:textSize="@dimen/item_text_size"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true"
+                                app:typeface="robotoRegular"/>
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/distance"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="@dimen/item_text_size"/>
+
+                            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                                android:id="@+id/distanceTView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/empty_string_val"
+                                android:textSize="@dimen/item_text_size"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true"
+                                app:typeface="robotoRegular"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/date"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="@dimen/item_text_size"/>
+
+                            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                                android:id="@+id/dateTView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/empty_string_val"
+                                android:textSize="@dimen/item_text_size"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true"
+                                app:typeface="robotoRegular"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/zone"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="@dimen/item_text_size"/>
+
+                            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                                android:id="@+id/zoneTView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/empty_string_val"
+                                android:textSize="@dimen/item_text_size"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true"
+                                app:typeface="robotoRegular"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/layer"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="@dimen/item_text_size"/>
+
+                            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                                android:id="@+id/coucheTView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/empty_string_val"
+                                android:textSize="@dimen/item_text_size"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true"
+                                app:typeface="robotoRegular"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/part"
+                        android:textSize="@dimen/detail_text_header_size"
+                        app:typeface="robotoThin"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <TextView
+                        android:id="@+id/regionTView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="@string/part_value"
+                        android:textSize="@dimen/item_text_size"
+                        android:background="@color/white"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textColorSecondary" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/compagny"
+                        android:textSize="@dimen/detail_text_header_size"
+                        app:typeface="robotoThin"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+
+                        <TextView
+                            android:id="@+id/eNameTView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/name"
+                            android:textSize="@dimen/item_text_size"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/referenceTView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/ref"
+                            android:textSize="@dimen/item_text_size"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/ePhoneTView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/phone"
+                            android:textSize="@dimen/item_text_size"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/eEmailTView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/email"
+                            android:textSize="@dimen/item_text_size"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/addressTView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/address"
+                            android:textSize="@dimen/item_text_size"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/webSiteTView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/website"
+                            android:textSize="@dimen/item_text_size"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guide"
+                        android:textSize="@dimen/detail_text_header_size"
+                        app:typeface="robotoThin"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/gNameTView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/name"
+                            android:textSize="@dimen/item_text_size"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/gEmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/email"
+                            android:textSize="@dimen/item_text_size"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/gTelTView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/phone"
+                            android:textSize="@dimen/item_text_size"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/textColorSecondary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/culture"
+                        android:textSize="@dimen/detail_text_header_size"
+                        app:typeface="robotoThin"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/cultureRView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

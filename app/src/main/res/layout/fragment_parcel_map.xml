@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context = ".activity.ParcelleDetailsActivity"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabLocation"
+            android:layout_gravity="bottom|start"
+            android:animateLayoutChanges="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin_bottom"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:tint="?colorPrimary"
+            app:backgroundTint="@color/white"
+            app:elevation="2dp"
+            app:fabSize="normal"
+            app:rippleColor="@color/main_color_grey_300"
+            app:srcCompat="@drawable/ic_location_black"
+            tools:background="@color/main_color_grey_700" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabNavigation"
+            android:layout_gravity="bottom|end"
+            android:animateLayoutChanges="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin_bottom"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:tint="?colorPrimary"
+            app:backgroundTint="@color/white"
+            app:elevation="2dp"
+            app:fabSize="normal"
+            app:rippleColor="@color/main_color_grey_400"
+            app:srcCompat="@drawable/ic_navigation_black"
+            tools:background="@color/white" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

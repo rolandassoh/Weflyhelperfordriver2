@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="password">Password</string>
+    <string name="user_name">Username</string>
+    <string name="login_big">LOGIN</string>
+
+    <string name="parcelle_num">parcel</string>
+    <string name="region">Region</string>
+    <string name="culture_title">Culture</string>
+
+    <!--Notification-->
+    <string name="notif_calendar_title">Wefly Hepler Driver Planning</string>
+    <string name="calendar_msg_left">You have </string>
+    <string name="calendar_msg_right">Parcels to fly over today</string>
+
+
+    <!--Internet-->
+    <string name="error_login">Error: Invalid username or password</string>
+
+    <!--Login-->
+    <string name="password_empty">Please fill in the password field</string>
+    <string name="name_empty">Please fill in the username field</string>
+
+    <!--Parcel-->
+    <string name="empty_parcelle">No saved parcel</string>
+    <string name="empty_schdule">No scheduled flyby</string>
+    <string name="error_api">An error has occurred</string>
+    <string name="empty_string">Sed ut perspiciatis unde omnis </string>
+    <string name="empty_string_val">Value </string>
+    <string name="search">Rechercher by region</string>
+    <string name="search_default">Rechercher by name</string>
+    <string name="compagny">Conpagny</string>
+    <string name="area">Area</string>
+    <string name="perimeter">Perimeter</string>
+    <string name="distance">Distance</string>
+    <string name="zone">Area</string>
+    <string name="layer">Layer</string>
+    <string name="date">Date</string>
+    <string name="guide">Guide</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone number</string>
+    <string name="ref">reference</string>
+    <string name="website">Website</string>
+    <string name="address">Address</string>
+    <string name="parcel">Parcel</string>
+    <string name="part">Region</string>
+    <string name="culture">Culture(s)</string>
+    <string name="part_value">p Region</string>
+    <string name="parcel_count">0</string>
+    <string name="no_one">No one</string>
+    <string name="cancel_dialog">Cancel</string>
+    <string name="deselec_title">Uncheck</string>
+    <string name="msg_deselect">do you really want to cancel all sections</string>
+    <string name="empty_company">No saved companies</string>
+    <!--Calendar-->
+    <string name="sample_child">child</string>
+    <string name="sch_cancel">Cancel flyby</string>
+    <string name="sch_update">Change date</string>
+    <string name="sch_done">Flight over done</string>
+    <string name="sch_info">Parcel Information</string>
+    <string name="delete_title">Delete</string>
+    <string name="msg_delete">Do you really want to delete this schedule?</string>
+    <string name="msg_update">Please select the new flyover date</string>
+    <string name="up_title">Change</string>
+    <string name="up_msg_left">Do you want to choose the </string>
+    <string name="up_msg_right">as new flyover date </string>
+    <string name="cancelled">Cancel done</string>
+    <string name="cancelled_f">Error, cancel not done</string>
+    <string name="updated">Update done</string>
+    <string name="updated_f">Error, Update not done</string>
+    <string name="recov_err">Erreur, Recovery not perform </string>
+    <string name="recov_done">Recovery perform</string>
+    <string name="recov_title">Recovery</string>
+    <string name="recov_msg">Would you like to recover all the parcels to fly over</string>
+    <string name="job_done">Good job</string>
+    <string name="job_done_f">Error, apply not perfom </string>
+    <string name="general">GENERAL</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="function">function</string>
+
+    <string name="entreprise">COMPANY</string>
+
+    <string name="loading_gps">IInitialization, please wait</string>
+
+    <!--PERMISSION-->
+    <string name="error_permission_all_right">in you settings</string>
+    <string name="error_permission_all_left">please allow permission </string>
+    <string name="error_permission_all_title">Remind </string>
+    <string name="permission_preference">PERMISSION_PREFERENCE</string>
+    <string name="save">SAVE</string>
+
+    <string name="help_title">Help</string>
+    <string name="help_msg">Download and watch the video of the quick guide? </string>
+    <string name="help_msg_again_left">this video </string>
+    <string name="help_msg_again_right">has already been downloaded, would you like to download it again?</string>
+    <string name="download_title"> Wefly Helper Driver Tutorial</string>
+    <string name="download_msg">WeflyHelper Driver tutorial</string>
+
+    <!--INTERNET-->
+    <string name="error_no_internet">Error, Please check your internet connection and try again </string>
+    <string name="retry">Retry</string>
+
+    <!--Location-->
+    <string name="mlocation_permission_dialog_title">Location Disabled</string>
+    <string name="mlocation_permission_dialog_message">to continue, allow WeflyHelper to access your location</string>
+    <string name="location_service_disable">To continue allow your device to activate the location</string>
+    <string name="not_now">not now</string>
+    <string name="yes">Yes</string>
+    <string name="please_sel_parcel">Please select at least one parcel</string>
+    <string name="schedule_performing"> Planning in progress...</string>
+    <string name="schedule_failed">Error, Planning not perfom</string>
+    <string name="schedule_ok">Planning done</string>
+
+    <!--Driver-->
+    <string name="driver">pilot</string>
+    <!--Title-->
+    <string name="activity_main_title">Parcels</string>
+    <string name="profile">Profile</string>
+    <string name="help">Help</string>
+    <string name="recovery">Recovery</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+
+    <string name="google_map_api_key" translatable="false">AIzaSyC0a_IXCAnpJBXFuVj3Opig-3mvFcPsqj0</string>
+    <!--menu-->
+    <string name="menu_home">Home</string>
+
+    <!--About-->
+    <string name="about_message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. weflyagri.com , Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem +225 22 46 34 64. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut</string>
+
+    <!--Update-->
+    <string name="version_title">Update</string>
+    <string name="version_msg">new updates available, allow download and install</string>
+    <string name="update">allow</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Menu reset-->
+    <string name="menu_reset">Reset</string>
+    <string name="menu_all">Select all</string>
+    <string name="menu_schedule">Plan</string>
+
+
+    <!--Icon-->
+    <string name="icon_no_internet" translatable="false">&#xeab6;</string>
+    <string name="icon_no_parcelle" translatable="false" >&#xf114;</string>
+    <string name="ic_fonte_error_api" translatable="false" >&#xe89e;</string>
+
+    <string name="fontello_search" translatable="false" >&#xea01;</string>
+    <string name="fontello_x_mark" translatable="false">&#xe887;</string>
+    <string name="fontello_microfon" translatable="false" >&#xea18;</string>
+    <string name="fontello_x_mark_masked" translatable="false" >&#xe885;</string>
+
+    <string name="cd_main_image">main image</string>
+    <string name="material_icon_point_empty" translatable="false" >&#xe868;</string>
+    <string name="material_icon_point_full" translatable="false">&#xe869;</string>
+
+    <string name="french">French</string>
+    <string name="english">English</string>
+
+    <!--Dialog-->
+    <string name="request_title">request</string>
+    <string name="select_err">Please select a future date</string>
+    <string name="map">Map</string>
+    <string name="info">Detail</string>
+    <string name="num">N°</string>
+
+    <string name="please_change">Please choose another date</string>
+
+</resources>

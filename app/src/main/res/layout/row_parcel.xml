@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="?selectableItemBackground"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/parcel_row_height">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:src="@drawable/img_default_parcel"
+            style="@style/ImageViewStyle" />
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/itemCheckImg"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="start|center"
+            android:gravity="center_vertical"
+            android:layout_margin="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            app:iiv_color="@color/material_red_400"
+            app:iiv_icon="faw-check-circle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:background="#80000000"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/itemParcelName"
+                    style="@style/TextViewAppearance.Caption1"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

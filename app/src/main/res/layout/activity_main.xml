@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.haibin.calendarviewproject.colorful.MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guillotine_actionbar_background_view_height"
+        android:background="@color/colorPrimayLight"
+        />
+
+    <LinearLayout
+        android:id="@+id/liMainDontUse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:contentInsetStart="0dp"
+            style="@style/Toolbar">
+
+            <ImageView
+                android:id="@+id/content_hamburger"
+                style="@style/ImageView.Hamburger"
+                android:src="@drawable/ic_menu_90" />
+
+            <com.wedevgroup.weflyhelperfordriver.utils.design.CanaroTextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/activity_main_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/guillotine_item_text_size" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/rLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded,HardcodedText,RtlSymmetry,SmallSp">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_tool"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:id="@+id/tv_month_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:textColor="@color/white"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlSymmetry" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_current"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/bg_ripple">
+
+                        <ImageView
+                            android:id="@+id/ib_calendar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/menu_action_calendar_mvp"
+                            android:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_current_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:text="13"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <com.haibin.calendarview.CalendarLayout
+                    android:id="@+id/calendarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    app:calendar_content_view_id="@+id/frameLay">
+
+                    <com.haibin.calendarview.CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        app:calendar_padding="10dp"
+                        app:current_month_lunar_text_color="#CFCFCF"
+                        app:current_month_text_color="#333333"
+                        app:min_year="2006"
+                        app:month_view="com.haibin.calendarviewproject.colorful.ColorfulMonthView"
+                        app:month_view_show_mode="mode_only_current"
+                        app:other_month_text_color="#e1e1e1"
+                        app:scheme_lunar_text_color="#ffffff"
+                        app:scheme_text=" "
+                        app:scheme_text_color="#fff"
+                        app:scheme_theme_color="#128c4b"
+                        app:selected_lunar_text_color="#fff"
+                        app:selected_text_color="#fff"
+                        app:selected_theme_color="#108cd4"
+                        app:week_background="#fff"
+                        app:week_text_color="#111"
+                        app:week_view="com.haibin.calendarviewproject.colorful.ColorfulWeekView"
+                        app:year_view_day_text_color="#333333"
+                        app:year_view_day_text_size="9sp"
+                        app:year_view_month_text_color="#ff0000"
+                        app:year_view_month_text_size="20sp"
+                        app:year_view_scheme_color="#f17706" />
+
+                    <FrameLayout
+                        android:id="@+id/frameLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <include layout="@layout/linear_no_parce_row" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
+
+                    </FrameLayout>
+                </com.haibin.calendarview.CalendarLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <include layout="@layout/linear_loading" />
+</FrameLayout>

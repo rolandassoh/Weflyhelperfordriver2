@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/itLinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/selector_expandable" >
+
+            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:maxWidth="180dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:text="@string/sch_info"
+                android:textColor="@color/material_lime_900"
+                android:textSize="14sp"
+                app:typeface="robotoMedium" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="start|center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/itLUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/selector_expandable" >
+
+            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:maxWidth="180dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:text="@string/sch_update"
+                android:textColor="@color/material_lime_900"
+                android:textSize="14sp"
+                app:typeface="robotoMedium" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="start|center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/itLCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/selector_expandable" >
+
+            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:maxWidth="180dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:text="@string/sch_cancel"
+                android:textColor="@color/material_lime_900"
+                android:textSize="14sp"
+                app:typeface="robotoMedium" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="start|center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itLiSchDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/selector_expandable" >
+
+            <com.wedevgroup.weflyhelperfordriver.utils.design.RobotoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:maxWidth="180dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:text="@string/sch_done"
+                android:textColor="@color/material_lime_900"
+                android:textSize="14sp"
+                app:typeface="robotoMedium" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="start|center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
