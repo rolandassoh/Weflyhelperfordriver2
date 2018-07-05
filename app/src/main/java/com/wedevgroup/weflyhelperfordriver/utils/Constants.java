@@ -9,9 +9,10 @@ public class Constants {
     // APP NAME
     public static final String APP_NAME         = "WeflyHelperForDriver";
     public static final String PATH             = "weflyhelperfordriver";
+    
 
-    public static final String API_URL                              =  "http://192.168.1.224:8000/";
-    public static final String API_URL_NO_SEPARATOR                 =  "http://192.168.1.224:8000";
+    public static final String API_URL                              =  "http://217.182.133.143:8004/";
+    public static final String API_URL_NO_SEPARATOR                 =  "http://217.182.133.143:8004";
 
     //public static final String API_URL =  "http://217.182.133.143:8004/";
 
